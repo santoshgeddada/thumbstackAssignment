@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAWAT</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--external css link-->
+    <link rel="stylesheet" href="dawat.css">
+
+</head>
+
+<body>
+    <div class="slide_container">
+        <div class="slider">
+            <div class="layer">
+                <img src="https://i.ibb.co/KzXzXMS/promo-slide-1.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="content">
+                <h2 class="italic_content">Welcome To</h2>
+                <h2 class="slide_content"><b>DAWAT</b> CAFE & RESTAURANT</h2>
+                <button>RESERVATION NOW</button>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="layer">
+                <img src="https://i.ibb.co/cvYDwns/promo-slide-2.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+
+            <div class="content">
+                <h2 class="italic_content">Our Menus</h2>
+                <h2 class="slide_content">SEE WHAT'S <b>NEW</b> TODAY</h2>
+                <BUTTON>TODAY'S MENU</BUTTON>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="layer">
+                <img src="https://i.ibb.co/mqfyGFc/promo-slide-3.jpg" alt="">
+                <div class="overlay"></div>
+            </div>
+            <div class="content">
+                <H2 class="italic_content">Get Ready</H2>
+                <H2 class="slide_content">TO <b>JOIN</b> WITH US</H2>
+                <button>BOOK A TABLE</button>
+            </div>
+        </div>
+
+        <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+
+        <header>
+
+            <div id="email_phone">
+                <i class="fas fa-envelope"></i>
+                <p>Email:info@Restaurant.com</p>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Telephone: +1800 234 5678</p>
+            </div>
+
+            <div id="social_icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <button>BOOK A TABLE</button>
+            </div>
+
+        </header>
+
+        <nav class="position">
+            <div class="navbar" id="stickynav">
+                <div>
+                    <img src="https://i.ibb.co/SRyPH6x/main-logo.png" alt="" id="stickyimg">
+                </div>
+
+                <div class="list">
+
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>OFFER</li>
+                    <li>MENU</li>
+                    <li>TEAM</li>
+                    <li>BLOG</li>
+                    <li>GALLERY</li>
+                    <li>CONTACT</li>
+                    <li><i class="fas fa-search"></i></li>
+
+                </div>
+
+
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- story section-->
+
+    <div class="story_section">
+        <h1>Our Story</h1>
+        <div class="news">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quam illum soluta deleniti necessitatibus fugiat quisquam quos vitae molestias asperiores? Magnam omnis cumque, nobis in mollitia quibusdam nemo aliquam adipisci tempora odio quas eum doloremque fugit qui vitae expedita facere fuga magni obcaecati? Laudantium omnis molestias aspernatur iste ratione enim eveniet adipisci ut perspiciatis quisquam est magnam qui nam, voluptas earum deserunt consectetur! Commodi sed amet sapiente error voluptatum delectus mollitia voluptatem accusantium.
+        </div>
+        <div class="sign">
+            <img src="https://i.ibb.co/myzChfD/about-sign.png" alt="">
+        </div>
+    </div>
+
+    <!--promo slider-->
+
+    <div id="promo_container">
+        <img src="https://i.ibb.co/tP4vqfj/blog-3.jpg" alt="">
+        <div id="opacity"></div>
+
+        <div id="text">
+            <h1>Special Package</h1>
+            <img src="https://i.ibb.co/tKdrkfN/red-seperator.png" alt="">
+        </div>
+
+        <div id="promo_images">
+            <div class="image_box">
+                <img src="https://i.ibb.co/KzXzXMS/promo-slide-1.jpg" alt="" id="promoimage">
+            </div>
+            <div class="offer_zone">
+                <h2>40% off for 9"-12" pizza-wed,thu,fri only</h2>
+                <br>
+                <p>Pizza 12 inch + 1 Side Dish + 1.5L Coke Bottle Only From Rs 209.</p>
+                <br>
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="menu">
+        <div id="heading">
+            <h2>Today's Menu</h2>
+            <img src="https://i.ibb.co/tKdrkfN/red-seperator.png" alt="">
+        </div>
+
+        <div id="menu_list">
+
+            <li onclick="all()">ALL</li>
+            <li onclick="breakfast()">BREAKFAST</li>
+            <li onclick="lunch()">LUNCH</li>
+            <li onclick="dinner()">DINNER</li>
+            <li onclick="coffee()">COFFEE</li>
+            <li onclick="snacks()">SNACKS</li>
+
+        </div>
+
+        <div id="menus">
+            <div class="cupcake" id="menu1">
+                <div><img src="https://i.ibb.co/syLpVvJ/menu-1.jpg" alt=""></div>
+                <div class="food_recipes">
+                    <h2>Cupcake Recipes</h2>
+
+                    <div class="menuname">
+                        <p>-Juice Fruite <br> -Vegetable <br>-Tomato</p>
+                        <p>-Chicken <br> -Milk <br> -Chilli</p>
+                        <p>-Cherry <br> -Patato <br>-Sesame</p>
+                    </div>
+                    <h3>$20.00</h3>
+
+                </div>
+
+            </div>
+            <div class="cupcake" id="menu2">
+                <div><img src="https://i.ibb.co/9cZg8KS/menu-2.jpg" alt=""></div>
+                <div class="food_recipes">
+                    <h2>Cupcake Recipes</h2>
+
+                    <div class="menuname">
+                        <p>-Juice Fruite <br> -Vegetable <br>-Tomato</p>
+                        <p>-Chicken <br> -Milk <br> -Chilli</p>
+                        <p>-Cherry <br> -Patato <br>-Sesame</p>
+                    </div>
+                    <h3>$22.00</h3>
+
+                </div>
+
+            </div>
+            <div class="cupcake" id="menu3">
+                <div><img src="https://i.ibb.co/SwP21j9/menu-3.jpg" alt=""></div>
+                <div class="food_recipes">
+                    <h2>Cupcake Recipes</h2>
+
+                    <div class="menuname">
+                        <p>-Juice Fruite <br> -Vegetable <br>-Tomato</p>
+                        <p>-Chicken <br> -Milk <br> -Chilli</p>
+                        <p>-Cherry <br> -Patato <br>-Sesame</p>
+                    </div>
+                    <h3>$17.00</h3>
+
+                </div>
+
+            </div>
+            <div class="cupcake" id="menu4">
+                <div><img src="https://i.ibb.co/zrrbV0Q/menu-4.jpg" alt=""></div>
+                <div class="food_recipes">
+                    <h2>Cupcake Recipes</h2>
+
+                    <div class="menuname">
+                        <p>-Juice Fruite <br> -Vegetable <br>-Tomato</p>
+                        <p>-Chicken <br> -Milk <br> -Chilli</p>
+                        <p>-Cherry <br> -Patato <br>-Sesame</p>
+                    </div>
+                    <h3>$28.00</h3>
+
+                </div>
+
+            </div>
+            <div class="cupcake" id="menu5">
+                <div><img src="https://i.ibb.co/ZMVfccm/menu-5.jpg" alt=""></div>
+                <div class="food_recipes">
+                    <h2>Cupcake Recipes</h2>
+
+                    <div class="menuname">
+                        <p>-Juice Fruite <br> -Vegetable <br>-Tomato</p>
+                        <p>-Chicken <br> -Milk <br> -Chilli</p>
+                        <p>-Cherry <br> -Patato <br>-Sesame</p>
+                    </div>
+                    <h3>$120.00</h3>
+
+                </div>
+
+            </div>
+            <div class="cupcake" id="menu6">
+                <div><img src="https://i.ibb.co/q5DjvnY/menu-6.jpg" alt=""></div>
+                <div class="food_recipes">
+                    <h2>Cupcake Recipes</h2>
+
+                    <div class="menuname">
+                        <p>-Juice Fruite <br> -Vegetable <br>-Tomato</p>
+                        <p>-Chicken <br> -Milk <br> -Chilli</p>
+                        <p>-Cherry <br> -Patato <br>-Sesame</p>
+                    </div>
+                    <h3>$100.00</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--table booking section-->
+
+    <div id="table_book">
+        <img src="https://i.ibb.co/XX8JPX4/blog-1.jpg" alt="">
+        <div id="table_opacity"></div>
+        <div id="booknow">
+            <h1>BOOK A TABLE NOW !</h1>
+            <button>BOOK NOW</button>
+        </div>
+    </div>
+
+    <!--chef section-->
+
+    <div id="chef">
+        <div id="heading">
+            <h1>Our Chefs</h1>
+            <img src="https://i.ibb.co/tKdrkfN/red-seperator.png" alt="">
+        </div>
+
+        <div id="chef_image_box">
+
+            <div id="chef_image">
+                <img src="https://i.ibb.co/RbgYqtF/team-1.jpg" alt="" class="hover">
+                <h3>Mark Angelilla</h3>
+                <p>cras senunc massa quisque tempor dolor sit amet</p>
+            </div>
+
+            <div id="chef_image">
+                <img src="https://i.ibb.co/vjJcSTM/team-2.jpg" alt="" class="hover">
+                <h3>Angel Meskat</h3>
+                <p>cras senunc massa quisque tempor dolor sit amet</p>
+            </div>
+
+            <div id="chef_image">
+                <img src="https://i.ibb.co/jLQnDRR/team-3.jpg" alt="" class="hover">
+                <h3>Jon Doe</h3>
+                <p>cras senunc massa quisque tempor dolor sit amet</p>
+            </div>
+
+            <div id="chef_image">
+                <img src="https://i.ibb.co/kQhDHNq/team-4.jpg" alt="" class="hover">
+                <h3>Angel Di Maria</h3>
+                <p>cras senunc massa quisque tempor dolor sit amet</p>
+            </div>
+
+            <div id="chef_image">
+                <img src="https://i.ibb.co/gTsNFzr/team-5.jpg" alt="" class="hover">
+                <h3>Park Ji Sung</h3>
+                <p>cras senunc massa quisque tempor dolor sit amet</p>
+            </div>
+        </div>
+    </div>
+
+    <!--news section-->
+
+    <div id="news">
+        <div id="image">
+            <img src="https://i.ibb.co/mqfyGFc/promo-slide-3.jpg" alt="">
+            <div id="opacity"></div>
+        </div>
+
+        <div id="heading">
+            <h1>Latest News</h1>
+            <img src="https://i.ibb.co/tKdrkfN/red-seperator.png" alt="">
+        </div>
+
+        <div id="news_container">
+            <div class="news_box">
+                <img src="https://i.ibb.co/XX8JPX4/blog-1.jpg" alt="">
+                <h3>Restaurant Welcome Day Meetup</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero aperiam fuarum</p>
+                <p>24.feb.2018 - 5 coomments</p>
+            </div>
+
+            <div class="news_box">
+                <img src="https://i.ibb.co/5cVypB6/blog-2.jpg" alt="">
+                <h3>Received First Day First Reservation</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero aperiam fuarum</p>
+                <p>24.feb.2018 - 5 coomments</p>
+            </div>
+
+            <div class="news_box">
+                <img src="https://i.ibb.co/tP4vqfj/blog-3.jpg" alt="">
+                <h3>Home To Get Your Home Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero aperiam fuarum</p>
+                <p>24.feb.2018 - 5 coomments</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--gallery section-->
+
+    <div id="gallery">
+        <h1>Gallery</h1>
+        <img src="https://i.ibb.co/tKdrkfN/red-seperator.png" alt="">
+    </div>
+
+    <!--footer section-->
+
+    <div id="footer">
+        <div id="footer_image">
+            <img src="https://i.ibb.co/yd0dx9p/Footer-background.png" alt="">
+            <div id="opacity"></div>
+        </div>
+        <div id="dawat_image">
+            <img src="https://i.ibb.co/SRyPH6x/main-logo.png" alt="">
+            <p id="address">20,Floor,Queensland Victori Building. 60 California Street USA</p>
+            <div id="contact">
+                <p>hello@dawat.com <br>+88 000 0000 1111</p>
+            </div>
+            <div id="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-discord"></i>
+                <i class="fab fa-skype"></i>
+            </div>
+            <div id="footer_text">
+                <div id="terms">
+                    <span>Terms of use</span><span>Privacy Policy</span><span>SiteMap</span><span>Contact</span>
+                </div>
+                <p>&#169;<span> Dawat Restaurant</span> All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="dawat.js"></script>
+</body>
+
+</html>
